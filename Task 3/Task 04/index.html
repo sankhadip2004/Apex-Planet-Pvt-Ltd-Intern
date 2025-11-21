@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Listing Page | Apex Planet Pvt Ltd</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Product Listing</h1>
+    <input type="text" id="searchBar" placeholder="Search products..." />
+  </header>
+
+  <!-- Filter Section -->
+  <section class="filters">
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="fashion">Fashion</option>
+      <option value="home">Home Appliances</option>
+    </select>
+
+    <select id="priceFilter">
+      <option value="all">All Prices</option>
+      <option value="low">Below ₹1000</option>
+      <option value="mid">₹1000 - ₹5000</option>
+      <option value="high">Above ₹5000</option>
+    </select>
+  </section>
+
+  <!-- Product Grid -->
+  <section id="productList" class="product-list">
+    <!-- Products will be loaded via JS -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
